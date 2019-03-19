@@ -45,4 +45,4 @@ app.get('/bad', (req, res) => {
     res.send({erroMessage: 'Unable to handle request'});
 });
 
-app.listen(process.env.port || 3000, () => console.log(`Server is up on port ${app.get('port') || 3000}`));
+app.listen(process.env.PORT || 3000, () => console.log(`Server is up on port ${app.get('port') || 3000}`));
